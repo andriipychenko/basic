@@ -11,15 +11,15 @@ const Navbar = () => {
     const [toggle, setToggle] = useState(false);
 
     return (
-        <nav className='navbar app__navbar'>
+        <nav className='navbar'>
             
             //1.BRAND
-            <div className='app__navbar-logo'>
+            <div className='navbar__brand'>
                 <img src={images.brand} alt="brand" />
             </div>
 
             //2.LINKS
-            <ul className='app__navbar-links'>
+            <ul className='navbar__links'>
                 {
                     ['home', 'about', 'contact'].map((item) => (
                         <li className='app__flex p-text' key={`link-${item}`}>
@@ -33,7 +33,7 @@ const Navbar = () => {
             </ul>
 
             //3.TOGGLE MENU
-            <div className="app__navbar-menu">
+            <div className="navbar__menu">
                 <HiMenu onClick={() => setToggle(true)} />
 
                 {toggle && (
