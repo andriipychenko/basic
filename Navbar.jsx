@@ -1,5 +1,5 @@
-https://react-icons.github.io/react-icons/
-https://www.npmjs.com/package/framer-motion
+//https://react-icons.github.io/react-icons/
+//https://www.npmjs.com/package/framer-motion
 
 import React, { useState } from 'react';
 import './Navbar.scss'
